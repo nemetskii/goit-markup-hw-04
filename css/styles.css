@@ -148,8 +148,8 @@ button:focus {
 
 /* ================ШАПКА СТРАНИЦЫ================ */
 .page-header {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  /* padding-top: 24px;
+  padding-bottom: 25px; */
   border-bottom: 1px solid #ececec;
 }
 .page-header-container {
@@ -178,6 +178,9 @@ button:focus {
   letter-spacing: 0.02em;
   color: var(--primary-color-article);
   padding: 32px 0;
+
+  display: flex;
+  flex-direction: row-reverse;
 }
 .navigation-link:hover,
 .navigation-link:focus {
@@ -193,6 +196,11 @@ button:focus {
 }
 .contact-list-icon {
   fill: var(--primary-color-text);
+  margin-right: 10px;
+}
+.contact-list-item:hover .contact-list-icon,
+.contact-list-iyem:focus .contact-list-icon {
+  fill: var(--accent-color);
 }
 .contact {
   color: var(--primary-color-text);

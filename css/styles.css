@@ -181,6 +181,7 @@ button:focus {
 
   display: flex;
   flex-direction: row-reverse;
+  align-items: center;
 }
 .navigation-link:hover,
 .navigation-link:focus {

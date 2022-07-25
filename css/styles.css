@@ -109,11 +109,15 @@ button:focus {
   color: var(--accent-text-color);
 }
 .address-list {
-  display: flex;
   margin-top: 20px;
 }
 .address-item:not(:last-child) {
   margin-bottom: 9px;
+}
+.address .container {
+  display: flex;
+  align-items: baseline;
+  gap: 70px;
 }
 .join {
   font-weight: 700;
@@ -135,6 +139,7 @@ button:focus {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  color: #ffffff;
   background-color: rgba(255, 255, 255, 0.1);
 }
 .footer-social-list-link:hover,
@@ -142,14 +147,12 @@ button:focus {
   background-color: var(--accent-color);
 }
 .footer-social-list-icon {
-  fill: #ffffff;
+  fill: currentColor;
 }
 /* ================/COMPONENT================ */
 
 /* ================ШАПКА СТРАНИЦЫ================ */
 .page-header {
-  /* padding-top: 24px;
-  padding-bottom: 25px; */
   border-bottom: 1px solid #ececec;
 }
 .page-header-container {
@@ -196,7 +199,7 @@ button:focus {
   margin-right: 50px;
 }
 .contact-list-icon {
-  fill: var(--primary-color-text);
+  fill: currentColor;
   margin-right: 10px;
 }
 .contact-list-item:hover .contact-list-icon,
@@ -215,10 +218,10 @@ button:focus {
 
 /*==========HERO==========  */
 .hero {
-  /* min-height: 600px; */
+  height: 600px;
   padding: 200px 0;
   /* background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(/images/bgimage.jpg);
+    url(./images/bgimage.jpg);
   background-size: cover;
   background-color: var(--secondary-bg-color); */
 }
@@ -227,8 +230,10 @@ button:focus {
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(/images/bgimage.jpg);
+    url(./images/bgimage.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   background-color: var(--secondary-bg-color);
 }
 .hero-title {
@@ -332,6 +337,7 @@ button:focus {
   justify-content: center;
 }
 .team-list-item {
+  background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -383,14 +389,15 @@ button:focus {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: var(--third-bg-color);
+  color: var(--primary-color-text);
+  background-color: #ffffff;
 }
 .social-list-link:hover,
 .social-list-link:focus {
   background-color: var(--accent-color);
 }
 .social-list-icon {
-  fill: var(--primary-color-text);
+  fill: currentColor;
 }
 .social-list-link:hover .social-list-icon,
 .social-list-link:focus .social-list-icon {
@@ -414,6 +421,8 @@ button:focus {
   gap: 30px;
 }
 .clients-list-item {
+}
+.clients-list-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -421,16 +430,17 @@ button:focus {
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  color: var(--primary-color-text);
 }
 .clients-list-icon {
-  fill: var(--primary-color-text);
+  fill: currentColor;
 }
-.clients-list-item:hover,
-.clients-list-item:focus {
+.clients-list-link:hover,
+.clients-list-link:focus {
   border-color: var(--accent-color);
 }
-.clients-list-item:hover .clients-list-icon,
-.clients-list-item:focus .clients-list-icon {
+.clients-list-link:hover .clients-list-icon,
+.clients-list-link:focus .clients-list-icon {
   fill: var(--accent-color);
 }
 /*==========/CLIENTS==========  */
@@ -487,11 +497,13 @@ button:focus {
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
 }
-.projects-item:hover,
-.projects-item:focus {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
+.projects-link {
+  display: block;
+}
+.projects-link:hover,
+.projects-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .projects-item:not(:nth-child(3n)) {

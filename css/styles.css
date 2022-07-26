@@ -10,6 +10,7 @@
   --primary-color-article: #212121;
   --primary-color-text: #757575;
   --contacts-color: rgba(255, 255, 255, 0.6);
+  --icon-color: #afb1b8;
 }
 body {
   font-family: var(--primary-font);
@@ -117,7 +118,9 @@ button:focus {
 .address .container {
   display: flex;
   align-items: baseline;
-  gap: 70px;
+}
+.footer-container:not(:last-child) {
+  margin-right: 70px;
 }
 .join {
   font-weight: 700;
@@ -218,8 +221,6 @@ button:focus {
 
 /*==========HERO==========  */
 .hero {
-  height: 600px;
-  padding: 200px 0;
   /* background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(./images/bgimage.jpg);
   background-size: cover;
@@ -230,11 +231,13 @@ button:focus {
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(./images/bgimage.jpg);
+    url(../images/bgimage.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--secondary-bg-color);
+  height: 600px;
+  padding: 200px 0;
 }
 .hero-title {
   width: 696px;
@@ -389,19 +392,15 @@ button:focus {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  color: var(--primary-color-text);
-  background-color: #ffffff;
+  color: var(--icon-color);
 }
 .social-list-link:hover,
 .social-list-link:focus {
   background-color: var(--accent-color);
+  color: var(--accent-text-color);
 }
 .social-list-icon {
   fill: currentColor;
-}
-.social-list-link:hover .social-list-icon,
-.social-list-link:focus .social-list-icon {
-  fill: var(--accent-text-color);
 }
 /*==========/TEAM==========  */
 
@@ -430,7 +429,7 @@ button:focus {
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  color: var(--primary-color-text);
+  color: var(--icon-color);
 }
 .clients-list-icon {
   fill: currentColor;
@@ -438,10 +437,7 @@ button:focus {
 .clients-list-link:hover,
 .clients-list-link:focus {
   border-color: var(--accent-color);
-}
-.clients-list-link:hover .clients-list-icon,
-.clients-list-link:focus .clients-list-icon {
-  fill: var(--accent-color);
+  color: var(--accent-color);
 }
 /*==========/CLIENTS==========  */
 
